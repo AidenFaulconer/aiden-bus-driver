@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run build
+npm run lint
+npm run type-coverage
+npm run test
+# If/when this becomes too slow, consider disabling it here but leaving it on in your CI build (in the GitHub Action in this case).
+npm run mutation-test
