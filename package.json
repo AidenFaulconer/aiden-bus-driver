@@ -1,95 +1,105 @@
-{
-  "name": "typescript-seed",
-  "version": "0.0.1",
-  "description": "An auto-updating, opinionated TypeScript seed project. All killer, no filler.",
-  "main": "dist",
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint src --ext .ts,.tsx",
-    "type-coverage": "type-coverage",
-    "format": "prettier --write 'src/**/*.{ts,tsx}'",
-    "test": "jest",
-    "mutation-test": "stryker run",
-    "prepare": "husky install",
-    "release": "semantic-release",
-    "commit": "git-cz"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+{    "name": "typescript-seed",
+    "version": "0.0.1",
+    "description": "An auto-updating, opinionated TypeScript seed project. All killer, no filler.",
+    "main": "dist",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint src --ext .ts,.tsx",
+        "type-coverage": "type-coverage",
+        "format": "prettier --write 'src/**/*.{ts,tsx}'",
+        "test": "jest",
+        "mutation-test": "stryker run",
+        "prepare": "husky install",
+        "release": "semantic-release",
+        "commit": "git-cz"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            "@semantic-release/npm",
+            [
+                "@semantic-release/git",
+                {
+                    "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+            ]
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
         }
-      ]
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/agiledigital-labs/typescript-seed.git"
+    },
+    "author": "Agile Digital",
+    "private": true,
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/agiledigital-labs/typescript-seed/issues"
+    },
+    "homepage": "https://github.com/agiledigital-labs/typescript-seed",
+    "devDependencies": {
+        "@jest/types": "^28.1.0",
+        "@semantic-release/git": "9.0.1",
+        "@stryker-mutator/core": "5.6.1",
+        "@stryker-mutator/jest-runner": "5.6.1",
+        "@stryker-mutator/typescript-checker": "5.6.1",
+        "@types/jest": "^27.4.1",
+        "@typescript-eslint/eslint-plugin": "4.33.0",
+        "@typescript-eslint/parser": "4.33.0",
+        "commitizen": "4.2.4",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "7.32.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-config-typed-fp": "1.7.0",
+        "eslint-plugin-functional": "3.7.2",
+        "eslint-plugin-jest": "24.7.0",
+        "eslint-plugin-prettier": "4.0.0",
+        "eslint-plugin-sonarjs": "0.10.0",
+        "eslint-plugin-total-functions": "4.10.1",
+        "fast-check": "^2.25.0",
+        "husky": "7.0.4",
+        "jest": "27.5.1",
+        "prettier": "2.6.2",
+        "semantic-release": "17.4.7",
+        "ts-jest": "27.1.4",
+        "type-coverage": "2.21.1",
+        "typescript": "4.6.4"
+    },
+    "typeCoverage": {
+        "atLeast": 95,
+        "ignoreCatch": false,
+        "strict": true,
+        "detail": true
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "enableFindRelatedTests": false,
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "src/**/*.{ts,tsx}",
+            "!src/**/*.d.ts"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 100,
+                "functions": 100,
+                "lines": 100,
+                "statements": 100
+            }
+        }
+    },
+    "dependencies": {
+        "@types/node": "^17.0.34",
+        "readonly-types": "^3.0.0",
+        "ts-node": "^10.7.0"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agiledigital-labs/typescript-seed.git"
-  },
-  "author": "Agile Digital",
-  "private": true,
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/agiledigital-labs/typescript-seed/issues"
-  },
-  "homepage": "https://github.com/agiledigital-labs/typescript-seed",
-  "devDependencies": {
-    "@semantic-release/git": "9.0.1",
-    "@stryker-mutator/core": "5.6.1",
-    "@stryker-mutator/jest-runner": "5.6.1",
-    "@stryker-mutator/typescript-checker": "5.6.1",
-    "@types/jest": "27.5.0",
-    "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.33.0",
-    "commitizen": "4.2.4",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-config-typed-fp": "1.7.0",
-    "eslint-plugin-functional": "3.7.2",
-    "eslint-plugin-jest": "24.7.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-sonarjs": "0.10.0",
-    "eslint-plugin-total-functions": "4.10.1",
-    "fast-check": "2.25.0",
-    "husky": "7.0.4",
-    "jest": "27.5.1",
-    "prettier": "2.6.2",
-    "semantic-release": "17.4.7",
-    "ts-jest": "27.1.4",
-    "type-coverage": "2.21.1",
-    "typescript": "4.6.4"
-  },
-  "typeCoverage": {
-    "atLeast": 100,
-    "ignoreCatch": false,
-    "strict": true,
-    "detail": true
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
-  }
 }
