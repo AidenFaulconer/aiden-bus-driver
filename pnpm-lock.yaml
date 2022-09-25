@@ -17,7 +17,7 @@ specifiers:
   eslint-config-typed-fp: 1.7.0
   eslint-plugin-functional: 3.7.2
   eslint-plugin-jest: 24.7.0
-  eslint-plugin-prettier: 4.0.0
+  eslint-plugin-prettier: 4.2.1
   eslint-plugin-sonarjs: 0.10.0
   eslint-plugin-total-functions: 4.10.1
   fast-check: ^2.25.0
@@ -52,7 +52,7 @@ devDependencies:
   eslint-config-typed-fp: 1.7.0_yynmev4z36vajx6ew42mdiaz6i
   eslint-plugin-functional: 3.7.2_e4zyhrvfnqudwdx5bevnvkluy4
   eslint-plugin-jest: 24.7.0_3arronl5qrwk5yczp3sylkfitm
-  eslint-plugin-prettier: 4.0.0_evcial7aw3q6fcauxv2c7fxuoe
+  eslint-plugin-prettier: 4.2.1_evcial7aw3q6fcauxv2c7fxuoe
   eslint-plugin-sonarjs: 0.10.0_eslint@7.32.0
   eslint-plugin-total-functions: 4.10.1_e4zyhrvfnqudwdx5bevnvkluy4
   fast-check: 2.25.0
@@ -2571,9 +2571,9 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_evcial7aw3q6fcauxv2c7fxuoe:
-    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
-    engines: {node: '>=6.0.0'}
+  /eslint-plugin-prettier/4.2.1_evcial7aw3q6fcauxv2c7fxuoe:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
       eslint-config-prettier: '*'
