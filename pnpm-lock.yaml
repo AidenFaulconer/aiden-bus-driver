@@ -28,7 +28,7 @@ specifiers:
   semantic-release: 17.4.7
   ts-jest: 27.1.5
   ts-node: ^10.7.0
-  type-coverage: 2.22.0
+  type-coverage: 2.27.1
   typescript: 4.6.4
 
 dependencies:
@@ -61,7 +61,7 @@ devDependencies:
   prettier: 2.7.1
   semantic-release: 17.4.7
   ts-jest: 27.1.5_53ggqi2i4rbcfjtktmjua6zili
-  type-coverage: 2.22.0_typescript@4.6.4
+  type-coverage: 2.27.1_typescript@4.6.4
   typescript: 4.6.4
 
 packages:
@@ -4444,9 +4444,9 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimatch/5.0.1:
-    resolution: {integrity: sha512-nLDxIFRyhDblz3qMuq+SoRZED4+miJ/G+tdDrjkkkRnjAsBexeGpgjLEQ0blJy7rHhR2b93rhQY4SvyWu9v03g==}
-    engines: {node: '>=10'}
+  /minimatch/9.0.3:
+    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
+    engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
     dev: true
@@ -5190,7 +5190,7 @@ packages:
   /rxjs/7.5.5:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: true
 
   /safe-buffer/5.1.2:
@@ -5784,25 +5784,25 @@ packages:
       prelude-ls: 1.2.1
     dev: true
 
-  /type-coverage-core/2.22.0_typescript@4.6.4:
-    resolution: {integrity: sha512-j2wjwOTeKc/G6RUrgVsBYuDbum2GnJ/pCQ6/DlMvgs1QBXEqZxI9N6okUSFc14veQBzr01gG0cwmdyagKdf3Sg==}
+  /type-coverage-core/2.27.1_typescript@4.6.4:
+    resolution: {integrity: sha512-W+PMYbhUsq+UWkrb7UkmyO7zF3zt4qZuQukyDM6eaiCIkMJclcVmR3O02clDk4FKpKPbzHictOmoIu3fYp+53g==}
     peerDependencies:
-      typescript: 2 || 3 || 4
+      typescript: 2 || 3 || 4 || 5
     dependencies:
       fast-glob: 3.2.11
-      minimatch: 5.0.1
+      minimatch: 9.0.3
       normalize-path: 3.0.0
       tslib: 2.4.0
       tsutils: 3.21.0_typescript@4.6.4
       typescript: 4.6.4
     dev: true
 
-  /type-coverage/2.22.0_typescript@4.6.4:
-    resolution: {integrity: sha512-wgM1yH4J5gAszojftiozxb6HSOvoCqYQLmIS5Ybo4HpBtr9BrVgK5duj4e3tkc28Xg6VA2WPB8GFC+oJw352oQ==}
+  /type-coverage/2.27.1_typescript@4.6.4:
+    resolution: {integrity: sha512-KAL2BRRvEACnyh830WoazZ5YJTmFBHEk/mCrJlVxNqjbAPrusJN0c4u3IzRrFMq/yRKsVEvwMp/awQDF4RgLSQ==}
     hasBin: true
     dependencies:
       minimist: 1.2.6
-      type-coverage-core: 2.22.0_typescript@4.6.4
+      type-coverage-core: 2.27.1_typescript@4.6.4
     transitivePeerDependencies:
       - typescript
     dev: true
