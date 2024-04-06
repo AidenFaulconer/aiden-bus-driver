@@ -18,7 +18,7 @@ specifiers:
   eslint-plugin-functional: 3.7.2
   eslint-plugin-jest: 24.7.0
   eslint-plugin-prettier: 4.2.1
-  eslint-plugin-sonarjs: 0.10.0
+  eslint-plugin-sonarjs: 0.25.1
   eslint-plugin-total-functions: 4.10.1
   fast-check: ^2.25.0
   husky: 7.0.4
@@ -53,7 +53,7 @@ devDependencies:
   eslint-plugin-functional: 3.7.2_e4zyhrvfnqudwdx5bevnvkluy4
   eslint-plugin-jest: 24.7.0_3arronl5qrwk5yczp3sylkfitm
   eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
-  eslint-plugin-sonarjs: 0.10.0_eslint@7.32.0
+  eslint-plugin-sonarjs: 0.25.1_eslint@7.32.0
   eslint-plugin-total-functions: 4.10.1_e4zyhrvfnqudwdx5bevnvkluy4
   fast-check: 2.25.0
   husky: 7.0.4
@@ -2588,11 +2588,11 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-sonarjs/0.10.0_eslint@7.32.0:
-    resolution: {integrity: sha512-FBRIBmWQh2UAfuLSnuYEfmle33jIup9hfkR0X8pkfjeCKNpHUG8qyZI63ahs3aw8CJrv47QJ9ccdK3ZxKH016A==}
-    engines: {node: '>=10'}
+  /eslint-plugin-sonarjs/0.25.1_eslint@7.32.0:
+    resolution: {integrity: sha512-5IOKvj/GMBNqjxBdItfotfRHo7w48496GOu1hxdeXuD0mB1JBlDCViiLHETDTfA8pDAVSBimBEQoetRXYceQEw==}
+    engines: {node: '>=16'}
     peerDependencies:
-      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       eslint: 7.32.0
     dev: true
